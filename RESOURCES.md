@@ -96,8 +96,8 @@ Quick links and resources for the Phoebus Tools and Services session.
 - **MongoDB:** https://www.mongodb.com/docs/
 
 ### Messaging / Streaming
-- **Apache Kafka:** https://kafka.apache.org/documentation/
-- **Kafka Streams:** https://kafka.apache.org/documentation/streams/
+- **Apache Kafka:** https://kafka.apache.org/
+- **Kafka Streams:** https://kafka.apache.org/41/streams/
 
 ---
 

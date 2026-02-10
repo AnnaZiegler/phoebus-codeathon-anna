@@ -35,6 +35,20 @@ This document outlines the technical discussion topics for the Phoebus Tools and
 - [ ] Modularization strategy (Java modules/JPMS)
 - [ ] CI/CD pipeline improvements
 
+#### 1.4 Java Platform Modernization
+- [ ] **JDK 21 LTS Adoption**
+  - Virtual Threads: improve scalability
+  - Sequenced Collections: ???
+  - Pattern Matching for switch
+  - Record Patterns: ???
+- [ ] **JDK 25 (Future) Considerations**
+  - Structured Concurrency: Simplified multi-threaded
+  - Stream Gatherers
+- [ ] **Migration Strategy**
+  - Impact on JavaFX compatibility and performance
+  - Virtual Threads integration with existing Phoebus threading model
+  - Timeline and rollout plan for JDK 21 adoption
+
 ---
 
 ### 2. Middle Layer Services
@@ -45,23 +59,33 @@ This document outlines the technical discussion topics for the Phoebus Tools and
 - [ ] Service discovery and registration
 - [ ] Load balancing and high availability
 
-#### 2.2 Archiver Service
+#### 2.2 Spring Boot 4 Migration
+- [ ] Spring Security 7: Enhanced OAuth2 resource server, authorization architecture improvements
+- [ ] REST API Versioning: URL-based vs header-based strategies, deprecation policies
+- [ ] Virtual Threads Support: Integration with Project Loom for improved concurrency
+- [ ] Native Image: GraalVM native compilation for faster startup and lower memory footprint
+- [ ] Observability: OpenTelemetry integration, metrics, distributed tracing across services
+- [ ] Problem Details (RFC 9457): Standardized error responses across all REST APIs
+- [ ] HTTP Interface Clients: Declarative HTTP clients replacing RestTemplate/WebClient
+- [ ] Docker Compose Support: Simplified local development and testing environments
+
+#### 2.3 Archiver Service
 - [ ] Archive Appliance performance tuning
 - [ ] Data retrieval optimization strategies
 - [ ] Storage backend options
 
-#### 2.3 Olog Integration
+#### 2.4 Olog Integration
 - [ ] Search and indexing improvements (Elasticsearch integration)
 - [ ] Template system enhancements
 - [ ] Integration with other services (ChannelFinder, Alarm)
 - [ ] Notification mechanisms
 
-#### 2.4 ChannelFinder Service
+#### 2.5 ChannelFinder Service
 - [ ] Property and tag management
 - [ ] Scalability for large installations (10M+ channels)
 - [ ] Integration with PVAccess and ChannelAccess Nameserver
 
-#### 2.5 Alarm Services
+#### 2.6 Alarm Services
 - [ ] Alarm configuration management
 - [ ] Notification systems (email, SMS, messaging platforms)
 - [ ] Alarm history and analytics
