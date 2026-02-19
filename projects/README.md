@@ -5,6 +5,40 @@ This directory contains the list of development projects for the Phoebus tools a
 
 ---
 
+## Project Index & Sign-up Sheet
+
+| Project ID | Title | Difficulty | Assigned To | Status |
+|------------|-------|------------|-------------|--------|
+| **Alarm Services** |||||
+| [ALARM-KAFKA-001](#alarm-kafka-001-enhanced-kafka-streams-error-handling) | Enhanced Kafka Streams Error Handling | Advanced | | Not Started |
+| [ALARM-KAFKA-002](#alarm-kafka-002-resilient-topic-handling-with-retry-logic) | Resilient Topic Handling with Retry Logic | Intermediate | | Not Started |
+| [ALARM-REST-001](#alarm-rest-001-alarm-configuration-rest-api) | Alarm Configuration REST API | Intermediate | | Not Started |
+| [ALARM-UI-001](#alarm-ui-001-display-highlow-alarm-limits-in-alarm-tree-tooltip) | Display High/Low Alarm Limits in Alarm Tree Tooltip | Intermediate | | Not Started |
+| [ALARM-UI-002](#alarm-ui-002-improve-alarm-log-table-searchquery-ui) | Improve Alarm Log Table Search/Query UI | Intermediate | | Not Started |
+| [ALARM-TOPICS-001](#alarm-topics-001-centralized-kafka-topic-management-service) | Centralized Kafka Topic Management Service | Intermediate | | Not Started |
+| **Phoebus UI & Framework** |||||
+| [PHOEBUS-VT-001](#phoebus-vt-001-virtual-threads-integration-assessment) | Virtual Threads Integration Assessment | Advanced | | Not Started |
+| [PHOEBUS-UI-001](#phoebus-ui-001-fix-timerangepopover-relative-time-selection) | Fix TimeRangePopover Relative Time Selection | Beginner | | Not Started |
+| [PHOEBUS-UI-002](#phoebus-ui-002-data-browser-archive-data-source-management) | Data Browser Archive Data Source Management | Intermediate | | Not Started |
+| [PHOEBUS-UI-003](#phoebus-ui-003-fix-pv-resource-leak-in-widgetruntime) | Fix PV Resource Leak in WidgetRuntime | Beginner | | Not Started |
+| [PHOEBUS-UI-004](#phoebus-ui-004-interactive-graph-widget-for-xyplot) | Interactive Graph Widget for XYPlot | Advanced | | Not Started |
+| [PHOEBUS-LINT-001](#phoebus-lint-001-display-builder-screen-linter) | Display Builder Screen Linter | Beginner | | Not Started |
+| **Middle Layer Services** |||||
+| [SERVICES-HEALTH-001](#services-health-001-standardize-health-endpoint-implementation) | Standardize Health Endpoint Implementation | Intermediate | | Not Started |
+| [SERVICES-SB4-001](#services-sb4-001-spring-boot-4-migration-planning) | Spring Boot 4 Migration Planning | Advanced | | Not Started |
+| [SERVICES-VERSIONING-001](#services-versioning-001-rest-api-versioning-strategy) | REST API Versioning Strategy | Intermediate | | Not Started |
+| [SERVICES-WEBSOCKET-001](#services-websocket-001-websocket-support-as-a-alternative-to-polling-phoebus-services) | WebSocket Support as Alternative to Polling | Intermediate | | Not Started |
+| **AI/ML Projects** |||||
+| [AI-DISPLAY-001](#ai-display-001-llm-assisted-display-screen-generation) | LLM-Assisted Display Screen Generation | Advanced | | Not Started |
+| [AI-DISPLAY-002](#ai-display-002-llm-based-display-screen-cicd-validator) | LLM-Based Display Screen CI/CD Validator | Intermediate | | Not Started |
+| [AI-ASSIST-001](#ai-assist-001-llm-powered-phoebus-development-assistant) | LLM-Powered Phoebus Development Assistant | Intermediate | | Not Started |
+| [AI-LOG-001](#ai-log-001-intelligent-log-analysis-for-alarm-logs) | Intelligent Log Analysis for Alarm Logs | Intermediate | | Not Started |
+| **DevOps & Infrastructure** |||||
+| [DEVOPS-ANSIBLE-001](#devops-ansible-001-phoebus-infrastructure-deployment) | Phoebus Infrastructure Deployment | Intermediate | | Not Started |
+| [DEVOPS-VM-001](#devops-vm-001-epics-services-training-vm) | EPICS Services Training VM | Intermediate | | Not Started |
+
+---
+
 ## How to Use This Guide
 
 1. Browse through the project list
@@ -23,7 +57,6 @@ This directory contains the list of development projects for the Phoebus tools a
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Advanced  
-**Estimated Time:** 3-4 days  
 **Skills Required:** Java, Kafka Streams API, Error Handling Patterns  
 
 **Description:**  
@@ -49,7 +82,6 @@ Implement robust error handling for Kafka Streams in alarm logger and alarm conf
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Intermediate  
-**Estimated Time:** 3 days  
 **Skills Required:** Java, Kafka Admin API, Retry Patterns  
 
 **Description:**  
@@ -72,7 +104,6 @@ Enhance alarm logger and alarm configuration logger services to gracefully handl
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Intermediate  
-**Estimated Time:** 2-3 days  
 **Skills Required:** Java, Spring Boot, REST API Design, Kafka  
 
 **Description:**  
@@ -93,7 +124,6 @@ Create a REST API for the alarm configuration service that exposes read-only acc
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Intermediate  
-**Estimated Time:** 2-3 days  
 **Skills Required:** JavaFX, EPICS PVA/PVAccess, Alarm System Architecture  
 
 **Description:**  
@@ -122,7 +152,6 @@ Enhance the Phoebus alarm tree to display high and low alarm limits (HIHI, HIGH,
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Intermediate  
-**Estimated Time:** 2-3 days  
 **Skills Required:** JavaFX, REST APIs, UI/UX Design  
 
 **Description:**  
@@ -146,7 +175,6 @@ Redesign the alarm log table search interface to be more intuitive and user-frie
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Intermediate  
-**Estimated Time:** 2-3 days  
 **Skills Required:** Java, Kafka Admin API, Refactoring  
 
 **Description:**  
@@ -173,7 +201,6 @@ Refactor the alarm server's Kafka topic creation and configuration logic into a 
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Advanced  
-**Estimated Time:** 3-4 days  
 **Skills Required:** Java 21, Concurrency, Performance Analysis, Virtual Threads  
 
 **Description:**  
@@ -198,7 +225,6 @@ Identify and prototype Virtual Threads (Project Loom) integration opportunities 
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Beginner  
-**Estimated Time:** 1-2 days  
 **Skills Required:** JavaFX, UI/UX, Time Handling  
 
 **Description:**  
@@ -224,7 +250,6 @@ Fix inconsistent behavior in the TimeRangePopover's relative time selection cont
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Intermediate  
-**Estimated Time:** 2-3 days  
 **Skills Required:** JavaFX, Data Browser Architecture, Archive Appliance Integration  
 
 **Description:**  
@@ -248,7 +273,6 @@ Add UI functionality to manually add, remove, and modify archive data sources in
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Beginner  
-**Estimated Time:** 1 day  
 **Skills Required:** Java, PV Access, Resource Management  
 
 **Description:**  
@@ -265,11 +289,26 @@ Fix PV resource leak in Display Builder runtime when using non-standard default 
 
 ---
 
+### PHOEBUS-UI-004: Interactive Graph Widget for XYPlot
+
+**Repository:** https://github.com/ControlSystemStudio/phoebus  
+**Difficulty:** Advanced  
+**Skills Required:** JavaFX, XYPlot Architecture, Mouse Event Handling, PV Access  
+
+**Description:**  
+Add interactive editing capability to XYPlot graphs, allowing users to drag points directly on the plot to edit PV values. Implement as new "Edit" mouse mode to avoid interfering with existing graph functionality.
+
+**Resources:**
+- GitHub Issue: https://github.com/ControlSystemStudio/phoebus/issues/3167
+
+**Assigned To:** _Available_
+
+---
+
 ### SERVICES-HEALTH-001: Standardize Health Endpoint Implementation
 
 **Repository:** Multiple (Olog, ChannelFinder, Save & Restore, Alarm Services)  
 **Difficulty:** Intermediate  
-**Estimated Time:** 2-3 days  
 **Skills Required:** Java, Spring Boot Actuator, Health Indicators  
 
 **Description:**  
@@ -295,7 +334,6 @@ Standardize Spring Boot Actuator health endpoints across all Phoebus middle laye
 
 **Repository:** Multiple (Olog, ChannelFinder, Save & Restore)  
 **Difficulty:** Advanced  
-**Estimated Time:** 4-5 days  
 **Skills Required:** Java, Spring Boot 3/4, Migration Planning  
 
 **Description:**  
@@ -332,7 +370,6 @@ Create comprehensive migration plan and proof-of-concept for upgrading Phoebus m
 
 **Repository:** Multiple (Olog, ChannelFinder, Save & Restore, Alarm Services)  
 **Difficulty:** Intermediate  
-**Estimated Time:** 3-4 days  
 **Skills Required:** Java, Spring Boot, REST API Design, Versioning Patterns  
 
 **Description:**  
@@ -369,7 +406,6 @@ Implement consistent REST API versioning across all Phoebus middle layer service
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Intermediate  
-**Estimated Time:** 3-4 days  
 **Skills Required:** Java, WebSocket, JavaFX, REST APIs  
 
 **Description:**  
@@ -399,7 +435,6 @@ Add WebSocket support to Phoebus clients for real-time updates from middle layer
 
 **Repository:** New phoebus-display-linter or add to Phoebus build tools  
 **Difficulty:** Beginner  
-**Estimated Time:** 2-3 days  
 **Skills Required:** Python/Java, XML parsing, Display Builder format knowledge  
 
 **Description:**  
@@ -419,7 +454,6 @@ Create a command-line linter for Display Builder (.bob) and OPI screens to detec
 
 **Repository:** https://github.com/ControlSystemStudio/phoebus  
 **Difficulty:** Advanced  
-**Estimated Time:** 4-5 days  
 **Skills Required:** Python/Java, LLM APIs (OpenAI/Anthropic/local models), Display Builder, Prompt Engineering  
 
 **Description:**  
@@ -452,7 +486,6 @@ Explore using Large Language Models (LLMs) to generate Phoebus Display Builder s
 
 **Repository:** New GitHub Actions / CI tools repository  
 **Difficulty:** Intermediate  
-**Estimated Time:** 3-4 days  
 **Skills Required:** Python, GitHub Actions, LLM APIs, Display Builder, XML parsing  
 
 **Description:**  
@@ -487,7 +520,6 @@ Develop an LLM-powered automated validator for Display Builder screens (.bob fil
 
 **Repository:** New AI tools repository  
 **Difficulty:** Intermediate  
-**Estimated Time:** 3-4 days  
 **Skills Required:** Python, LLM APIs, RAG (Retrieval Augmented Generation), Vector Databases  
 
 **Description:**  
@@ -523,7 +555,6 @@ Build an AI assistant that helps Phoebus developers by answering questions about
 
 **Repository:** New AI/ML analysis tools  
 **Difficulty:** Intermediate  
-**Estimated Time:** 3 days  
 **Skills Required:** Java/Python, Log Parsing, Pattern Recognition  
 
 **Description:**  
@@ -537,7 +568,6 @@ Apply natural language processing and pattern recognition to alarm service logs 
 
 **Repository:** New ansible-phoebus-collection  
 **Difficulty:** Intermediate  
-**Estimated Time:** 4-5 days  
 **Skills Required:** Ansible, Linux System Administration, Docker/Podman  
 
 **Description:**  
@@ -568,7 +598,6 @@ Create a comprehensive Ansible collection with roles and playbooks for deploying
 
 **Repository:** New epics-services-training-vm  
 **Difficulty:** Intermediate  
-**Estimated Time:** 3-4 days  
 **Skills Required:** Vagrant/VirtualBox, Linux, Ansible, EPICS  
 
 **Description:**  
@@ -595,34 +624,6 @@ Create a training VM for Phoebus services and tools that complements the existin
 - Vagrant documentation: https://www.vagrantup.com/docs
 
 **Assigned To:** _Available_
-
----
-
-## Project Sign-up Sheet
-
-| Project ID | Title | Assigned To | Status | Notes |
-|------------|-------|-------------|--------|-------|
-| ALARM-KAFKA-001 | Enhanced Kafka Streams Error Handling | | Not Started | |
-| ALARM-KAFKA-002 | Resilient Topic Handling with Retry Logic | | Not Started | |
-| ALARM-REST-001 | Alarm Configuration REST API | | Not Started | |
-| ALARM-UI-001 | Display High/Low Alarm Limits in Alarm Tree Tooltip | | Not Started | |
-| ALARM-UI-002 | Improve Alarm Log Table Search/Query UI | | Not Started | |
-| ALARM-TOPICS-001 | Centralized Kafka Topic Management Service | | Not Started | |
-| PHOEBUS-VT-001 | Virtual Threads Integration Assessment | | Not Started | |
-| PHOEBUS-UI-001 | Fix TimeRangePopover Relative Time Selection | | Not Started | |
-| PHOEBUS-UI-002 | Data Browser Archive Data Source Management | | Not Started | |
-| PHOEBUS-UI-003 | Fix PV Resource Leak in WidgetRuntime | | Not Started | |
-| PHOEBUS-LINT-001 | Display Builder Screen Linter | | Not Started | |
-| SERVICES-HEALTH-001 | Standardize Health Endpoint Implementation | | Not Started | |
-| SERVICES-SB4-001 | Spring Boot 4 Migration Planning | | Not Started | |
-| SERVICES-VERSIONING-001 | REST API Versioning Strategy | | Not Started | |
-| SERVICES-WEBSOCKET-001 | WebSocket Fallback Mechanism for Phoebus Clients | | Not Started | |
-| AI-DISPLAY-001 | LLM-Assisted Display Screen Generation | | Not Started | |
-| AI-DISPLAY-002 | LLM-Based Display Screen CI/CD Validator | | Not Started | |
-| AI-ASSIST-001 | LLM-Powered Phoebus Development Assistant | | Not Started | |
-| AI-LOG-001 | Intelligent Log Analysis for Alarm Services | | Not Started | |
-| DEVOPS-ANSIBLE-001 | Phoebus Infrastructure Deployment | | Not Started | |
-| DEVOPS-VM-001 | EPICS Services Training VM | | Not Started | |
 
 ---
 
