@@ -507,6 +507,41 @@ Create a comprehensive Ansible collection with roles and playbooks for deploying
 
 ---
 
+### DEVOPS-VM-001: EPICS Services Training VM
+
+**Repository:** New epics-services-training-vm  
+**Difficulty:** Intermediate  
+**Estimated Time:** 3-4 days  
+**Skills Required:** Vagrant/VirtualBox, Linux, Ansible, EPICS  
+
+**Description:**  
+Create a training VM for Phoebus services and tools that complements the existing EPICS training-vm. The VM should provide a pre-configured environment with all Phoebus middle layer services running, suitable for workshops, tutorials, and onboarding new users.
+
+- Build VM based on Vagrant/VirtualBox similar to epics-training-vm structure
+- Leverage Ansible roles/playbooks from DEVOPS-ANSIBLE-001 for service deployment
+- Include pre-configured services with sample data:
+  - Olog (with example log entries)
+  - ChannelFinder (with sample PV directory)
+  - Save & Restore (with example configurations)
+  - Alarm Server & Logger (with example alarm configuration)
+  - Archiver Appliance (extract and adapt from existing training VM if present)
+- Include Phoebus client with pre-configured service connections
+- Add demo IOCs generating test PVs for training exercises
+- Create getting-started guide with training exercises:
+- Optimize VM size and resource usage for laptop deployment
+- Provide scripts for resetting VM to clean state between training sessions
+- Document customization for facility-specific training needs
+
+**Resources:**
+- EPICS training-vm: https://github.com/epics-training/training-vm
+- Ansible roles from DEVOPS-ANSIBLE-001
+- Vagrant documentation: https://www.vagrantup.com/docs
+- Service repositories: https://github.com/ControlSystemStudio/
+
+**Assigned To:** _Available_
+
+---
+
 ## Project Sign-up Sheet
 
 | Project ID | Title | Assigned To | Status | Notes |
@@ -526,6 +561,7 @@ Create a comprehensive Ansible collection with roles and playbooks for deploying
 | AI-ASSIST-001 | LLM-Powered Phoebus Development Assistant | | Not Started | |
 | AI-LOG-001 | Intelligent Log Analysis for Alarm Services | | Not Started | |
 | DEVOPS-ANSIBLE-001 | Phoebus Infrastructure Deployment | | Not Started | |
+| DEVOPS-VM-001 | EPICS Services Training VM | | Not Started | |
 
 ---
 
