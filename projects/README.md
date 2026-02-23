@@ -35,6 +35,8 @@ This directory contains the list of development projects for the Phoebus tools a
 | [SERVICES-CFNS-001](#services-cfns-001-multi-threaded-channelfinder-nameserver-with-broadcast-fallback) | Multi-threaded ChannelFinder Nameserver with Broadcast Fallback | Intermediate | | Not Started |
 | [SERVICES-RECSYNC-001](#services-recsync-001-java-recsync-implementation) | Java RecSync Implementation | Intermediate | | Not Started |
 | [SERVICES-RECSYNC-002](#services-recsync-002-convert-recceiver-to-pixi-project) | Convert RecCeiver to Pixi Project | Beginner | | Not Started |
+| [SERVICES-RECSYNC-003](#services-recsync-003-rust-recsync-implementation) | Rust RecSync Implementation | Intermediate | | Not Started |
+| [SERVICES-RECSYNC-004](#services-recsync-004-direct-pva-rpc-from-reccaster-to-channelfinder) | Direct PVA-RPC from RecCaster to ChannelFinder | Advanced | | Not Started |
 | **AI/ML Projects** |||||
 | [AI-DISPLAY-001](#ai-display-001-llm-assisted-display-screen-generation) | LLM-Assisted Display Screen Generation | Advanced | | Not Started |
 | [AI-DISPLAY-002](#ai-display-002-llm-based-display-screen-cicd-validator) | LLM-Based Display Screen CI/CD Validator | Intermediate | | Not Started |
@@ -612,6 +614,53 @@ Modernize the RecCeiver Python server by converting it from traditional setuptoo
 - RecCeiver server: https://github.com/ChannelFinder/recsync/tree/master/server
 - Pixi documentation: https://pixi.sh/
 - Current pyproject.toml: https://github.com/ChannelFinder/recsync/blob/master/server/pyproject.toml
+
+**Assigned To:** _Available_
+
+---
+
+### SERVICES-RECSYNC-003: Rust RecSync Implementation
+
+**Repository:** https://github.com/ChannelFinder/recsync  
+**Difficulty:** Intermediate  
+**Skills Required:** Rust, EPICS IOC Communication, Network Programming  
+
+**Description:**  
+Develop a Rust implementation of RecCeiver (recsync) for high-performance, safe, and reliable IOC record monitoring and ChannelFinder synchronization.
+
+- Implement Rust-based IOC record receiver matching RecCeiver functionality
+- Utilize asynchronous programming (tokio/async-std) for efficient I/O
+- Implement health monitoring and status reporting endpoints
+- Ensure memory safety and high performance
+- Ensure compatibility with existing ChannelFinder deployments
+
+**Resources:**
+- recsync repository: https://github.com/ChannelFinder/recsync
+- ChannelFinder Service: https://github.com/ChannelFinder/ChannelFinderService
+
+**Assigned To:** _Available_
+
+---
+
+### SERVICES-RECSYNC-004: Direct PVA-RPC from RecCaster to ChannelFinder
+
+**Repository:** https://github.com/ChannelFinder/recsync  
+**Difficulty:** Advanced  
+**Skills Required:** C++, Java, EPICS PVAccess (PVA-RPC), Network Programming  
+
+**Description:**  
+Explore and implement a direct communication path between the EPICS IOC component (`reccaster`) and the `ChannelFinder` service using `pva-rpc`. This approach simplifies the architecture by removing the need for an intermediate `recceiver` (or `recsync` server) process.
+
+- Implement `pva-rpc` support within the `reccaster` component (typically C/C++)
+- Define `pva-rpc` service endpoints on the `ChannelFinder` service side to receive and process record data
+- Ensure data integrity and efficient transfer of large record sets from the IOC to the directory service
+- Support secure communication via PVAccess security mechanisms
+- Evaluate performance, scalability, and simplified deployment benefits compared to the traditional `recsync` architecture
+
+**Resources:**
+- recsync repository: https://github.com/ChannelFinder/recsync
+- ChannelFinder Service: https://github.com/ChannelFinder/ChannelFinderService
+- PVAccess (PVA-RPC) documentation: https://epics-base.github.io/pvDataCPP/pva_rpc.html
 
 **Assigned To:** _Available_
 
