@@ -26,6 +26,7 @@ This directory contains the list of development projects for the Phoebus tools a
 | [PHOEBUS-UI-006](#phoebus-ui-006-remove-hardcoded-colors-for-css-consistency) | Remove Hardcoded Colors for Consistency | Intermediate | | Not Started |
 | [PHOEBUS-UI-007](#phoebus-ui-007-textentry-widget-autocomplete-suggestions) | TextEntry Widget Autocomplete Suggestions | Beginner | | Not Started |
 | [PHOEBUS-UI-008](#phoebus-ui-008-modernize-switch-statements-with-jdk-21-patterns) | Modernize Switch Statements with JDK 21 Patterns | Beginner | | Not Started |
+| [PHOEBUS-DEV-001](#phoebus-dev-001-verify-intellij-idea-setup-instructions) | Verify IntelliJ IDEA Setup Instructions | Beginner | | Not Started |
 | [PHOEBUS-LINT-001](#phoebus-lint-001-display-builder-screen-linter) | Display Builder Screen Linter | Beginner | | Not Started |
 | **Middle Layer Services** |||||
 | [SERVICES-HEALTH-001](#services-health-001-standardize-health-endpoint-implementation) | Standardize Health Endpoint Implementation | Intermediate | | Not Started |
@@ -403,6 +404,28 @@ Refactor legacy switch statements throughout Phoebus codebase to use JDK 21 mode
 **Resources:**
 - JDK 21 Pattern Matching: https://openjdk.org/jeps/441
 - Switch Pattern Matching: https://docs.oracle.com/en/java/javase/21/language/pattern-matching.html
+
+**Assigned To:** _Available_
+
+---
+
+### PHOEBUS-DEV-001: Verify IntelliJ IDEA Setup Instructions
+
+**Repository:** https://github.com/ControlSystemStudio/phoebus  
+**Difficulty:** Beginner  
+**Skills Required:** IntelliJ IDEA  
+
+**Description:**  
+Verify and update the IntelliJ IDEA setup instructions in the README. Test import, build, and run steps to ensure they work with current IntelliJ versions.
+
+- Follow README instructions for importing Phoebus into IntelliJ IDEA
+- Verify Maven import and dependency resolution
+- Test build process
+- Test running Phoebus from IDE
+- Update instructions if any steps are outdated or missing
+
+**Resources:**
+- Current instructions: https://github.com/ControlSystemStudio/phoebus#developing-with-intellij-idea
 
 **Assigned To:** _Available_
 
