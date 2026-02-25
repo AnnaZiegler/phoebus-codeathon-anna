@@ -160,7 +160,7 @@ Phoebus services only publish documentation for the latest master branch. Users 
 
 ### DOC-STRUCT-004: Improve Phoebus.org Website
 
-**Repository:** https://github.com/ControlSystemStudio/phoebus  
+**Repository:** https://github.com/ControlSystemStudio/controlsystemstudio.org
 **Difficulty:** Intermediate  
 **Estimated Time:** 3-5 days  
 **Skills Required:** Web Development, Technical Writing, Community Management  
