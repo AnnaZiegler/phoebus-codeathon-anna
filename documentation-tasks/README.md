@@ -173,13 +173,15 @@ Phoebus.org serves as the main landing page for the Phoebus ecosystem but has ou
   - Audit all external links (GitHub repos, documentation sites, downloads) :white_check_mark:
   - Update broken or outdated links :white_check_mark:
   - Ensure links point to correct ReadTheDocs documentation :white_check_mark:
-  - Add links to all ecosystem services (Alarm Services, Archiver Appliance, ChannelFinder, Olog, Save & Restore) :question: (Might need to be updated after the Documentation was updated. Currently all links work as intended.)
   - Fix links to community resources (Matrix chat, ~~mailing lists~~, GitHub Discussions) :white_check_mark:
-- [ ] **Add Missing Information**:
-  - Complete service descriptions for all middleware services
-  - Add "Getting Started" quickstart guide
-  - Include architecture overview diagram showing how services interact
-  - List key features and capabilities
+  - Add links to all ecosystem services (Alarm Services, Archiver Appliance, ChannelFinder, Olog, Save & Restore) :question: (Maybe has to be updated after the Documentation was updated. Currently all links work as intended.)
+- [x] **Add Missing Information**:
+  - Services - Complete service descriptions for all middleware services, proofread :white_check_mark:
+  - About - Extend information at the top, then proofread :white_check_mark:
+  - Applications - proofread :white_check_mark:
+  - Download - Add "Getting Started" quickstart guide, under the Download section, add some useful links :white_check_mark:
+  - Include architecture overview diagram showing how services interact :question:
+  - List key features and capabilities :question:
 - [ ] **Expand Collaboration Section**:
   - Highlight community contribution opportunities
   - Add "How to Contribute" section with clear paths for different skill levels
