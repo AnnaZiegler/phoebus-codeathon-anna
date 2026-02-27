@@ -196,7 +196,7 @@ Discussion on alarm services:
   - Make changes in UI/memory
   - Save changes from memory to config file.
 - Actions not allowed (e.g. no producer messages) must provide feedback or be disabled.
-- REST API for Kafka producer messages for ack, disable, config change.
+- REST API for Kafka producer messages for ack, disable, config change?
   - This would be a new service replacing (?) producer messages from alarm UIs.
 
 ---
