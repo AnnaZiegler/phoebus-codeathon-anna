@@ -61,7 +61,14 @@ Phoebus ecosystem mix user, developer, and admin documentation together, making 
 - Discussion topic: [4.4 Documentation Strategy](discussion-topics/README.md#44-documentation-strategy)
 - GitHub Issue #3558: https://github.com/ControlSystemStudio/phoebus/issues/3558
 
-**Assigned To:** _Available_
+**Assigned To:** Rémi NICOLE (CEA), Georg Weiss (ESS), Everyone on Phoebus table  
+**Status:** In Progress  
+**Notes:** Multiple initiatives in progress:
+- Olog documentation structure has been migrated and merged - see https://olog.readthedocs.io/en/latest/
+- Common user roles and documentation articles established - see https://docs.google.com/document/d/10oipk7mUnPIMryraRGQpPgFCsdGvfIuPCNlf4ueU-sc/edit
+- Sphinx template for Phoebus projects created - see https://github.com/ControlSystemStudio/phoebus-codeathon/tree/master/documentation-tasks/template
+- ChannelFinder documentation migration to new structure: 30% complete by Kacper Potoczny (ELI Beamlines), merging old documents into new structure
+- Olog User/operator documentation improvements in PR #257
 
 ---
 
@@ -195,7 +202,9 @@ Phoebus.org serves as the main landing page for the Phoebus ecosystem but has ou
 - Current site: https://phoebus.org (or phoebus-doc.readthedocs.io)
 - Discussion topic: [4.4 Documentation Strategy](discussion-topics/README.md#44-documentation-strategy)
 
-**Assigned To:** _Available_
+**Assigned To:** Anna Ziegler (HZB)  
+**Status:** 70% Complete  
+**Notes:** Updated all Links and References, Added Missing Information, Proofread and improved all Texts, Added "Quickstart Guide" in Download section, Added upcoming Events section, Contribute overhaul. See https://github.com/ControlSystemStudio/phoebus-codeathon/tree/master/documentation-tasks
 
 ---
 

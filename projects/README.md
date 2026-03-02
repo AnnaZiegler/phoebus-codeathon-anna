@@ -11,25 +11,25 @@ This directory contains the list of development projects for the Phoebus tools a
 |------------|-------|------------|-------------|--------|
 | **Alarm Services** |||||
 | [ALARM-KAFKA-001](#alarm-kafka-001-enhanced-kafka-streams-error-handling) | Enhanced Kafka Streams Error Handling | Advanced | | Not Started |
-| [ALARM-KAFKA-002](#alarm-kafka-002-resilient-topic-handling-with-retry-logic) | Resilient Topic Handling with Retry Logic | Intermediate | | Not Started |
+| [ALARM-KAFKA-002](#alarm-kafka-002-resilient-topic-handling-with-retry-logic) | Resilient Topic Handling with Retry Logic | Intermediate | Loic Caouen (CEA) | Completed |
 | [ALARM-REST-001](#alarm-rest-001-alarm-configuration-rest-api) | Alarm Configuration REST API | Intermediate | | Not Started |
 | [ALARM-UI-001](#alarm-ui-001-display-highlow-alarm-limits-in-alarm-tree-tooltip) | Display High/Low Alarm Limits in Alarm Tree Tooltip | Intermediate | | Not Started |
 | [ALARM-UI-002](#alarm-ui-002-improve-alarm-log-table-searchquery-ui) | Improve Alarm Log Table Search/Query UI | Intermediate | | Not Started |
-| [ALARM-TOPICS-001](#alarm-topics-001-centralized-kafka-topic-management-service) | Centralized Kafka Topic Management Service | Intermediate | | Not Started |
+| [ALARM-TOPICS-001](#alarm-topics-001-centralized-kafka-topic-management-service) | Centralized Kafka Topic Management Service | Intermediate | Georg Weiss (ESS) | In Progress |
 | **Phoebus UI & Framework** |||||
 | [PHOEBUS-VT-001](#phoebus-vt-001-virtual-threads-integration-assessment) | Virtual Threads Integration Assessment | Advanced | | Not Started |
 | [PHOEBUS-UI-001](#phoebus-ui-001-fix-timerangepopover-relative-time-selection) | Fix TimeRangePopover Relative Time Selection | Beginner | | Not Started |
 | [PHOEBUS-UI-002](#phoebus-ui-002-data-browser-archive-data-source-management) | Data Browser Archive Data Source Management | Intermediate | | Not Started |
 | [PHOEBUS-UI-003](#phoebus-ui-003-fix-pv-resource-leak-in-widgetruntime) | Fix PV Resource Leak in WidgetRuntime | Beginner | | Not Started |
 | [PHOEBUS-UI-004](#phoebus-ui-004-interactive-graph-widget-for-xyplot) | Interactive Graph Widget for XYPlot | Advanced | | Not Started |
-| [PHOEBUS-UI-005](#phoebus-ui-005-default-email-address-preferences) | Default Email Address Preferences | Beginner | | Not Started |
-| [PHOEBUS-UI-006](#phoebus-ui-006-remove-hardcoded-colors-for-css-consistency) | Remove Hardcoded Colors for Consistency | Intermediate | | Not Started |
+| [PHOEBUS-UI-005](#phoebus-ui-005-default-email-address-preferences) | Default Email Address Preferences | Beginner | Martin Gaughran (DLS) | Completed |
+| [PHOEBUS-UI-006](#phoebus-ui-006-remove-hardcoded-colors-for-css-consistency) | Remove Hardcoded Colors for Consistency | Intermediate | Urban Bobek (Cosylab) | In Progress |
 | [PHOEBUS-UI-007](#phoebus-ui-007-textentry-widget-autocomplete-suggestions) | TextEntry Widget Autocomplete Suggestions | Beginner | | Not Started |
 | [PHOEBUS-UI-008](#phoebus-ui-008-modernize-switch-statements-with-jdk-21-patterns) | Modernize Switch Statements with JDK 21 Patterns | Beginner | | Not Started |
 | [PHOEBUS-DEV-001](#phoebus-dev-001-verify-intellij-idea-setup-instructions) | Verify IntelliJ IDEA Setup Instructions | Beginner | | Not Started |
 | [PHOEBUS-LINT-001](#phoebus-lint-001-display-builder-screen-linter) | Display Builder Screen Linter | Beginner | | Not Started |
 | **Middle Layer Services** |||||
-| [SERVICES-HEALTH-001](#services-health-001-standardize-health-endpoint-implementation) | Standardize Health Endpoint Implementation | Intermediate | | Not Started |
+| [SERVICES-HEALTH-001](#services-health-001-standardize-health-endpoint-implementation) | Standardize Health Endpoint Implementation | Intermediate | Kunal Shroff (BNL) | Completed |
 | [SERVICES-SB4-001](#services-sb4-001-spring-boot-4-migration-planning) | Spring Boot 4 Migration Planning | Advanced | | Not Started |
 | [SERVICES-VERSIONING-001](#services-versioning-001-rest-api-versioning-strategy) | REST API Versioning Strategy | Intermediate | | Not Started |
 | [SERVICES-WEBSOCKET-001](#services-websocket-001-websocket-support-as-a-alternative-to-polling-phoebus-services) | WebSocket Support as Alternative to Polling | Intermediate | | Not Started |
@@ -106,7 +106,9 @@ Enhance alarm logger and alarm configuration logger services to gracefully handl
 - Add configuration properties for retry intervals and max retry attempts
 - Services should recover automatically without restart when topics are recreated, reconnecting to Kafka and resuming message processing
 
-**Assigned To:** _Available_
+**Assigned To:** Loic Caouen (CEA)  
+**Status:** Completed - Tested and Merged  
+**Notes:** PR titled "Make the alarm logging and the alarm config logging services more resilient" was tested and merged.
 
 ---
 
@@ -203,7 +205,9 @@ Refactor the alarm server's Kafka topic creation and configuration logic into a 
 - Kafka AdminClient API: https://kafka.apache.org/41/javadoc/org/apache/kafka/clients/admin/AdminClient.html
 - Topic configuration: https://kafka.apache.org/41/documentation.html#topicconfigs
 
-**Assigned To:** _Available_
+**Assigned To:** Georg Weiss (ESS)  
+**Status:** In Progress - PR #3715 opened  
+**Notes:** Working on allowing customization of Kafka topics partition count and replication factor.
 
 ---
 
@@ -332,7 +336,8 @@ Add preferences for default email addresses in the Phoebus send email dialog. Cu
 **Resources:**
 - GitHub Issue: https://github.com/ControlSystemStudio/phoebus/issues/3589
 
-**Assigned To:** _Available_
+**Assigned To:** Martin Gaughran (DLS)  
+**Status:** Completed - PR #3717 opened  
 
 ---
 
@@ -360,7 +365,9 @@ Refactor hardcoded color values throughout Phoebus to use a central ColorService
 - Queue Server FXML styles: `app/queue-server/src/main/resources/org/phoebus/applications/queueserver/view/ReStatusMonitor.fxml#L13`
 - NamedWidgetColors: `app/display/model/src/main/java/org/csstudio/display/builder/model/persist/NamedWidgetColors.java`
 
-**Assigned To:** _Available_
+**Assigned To:** Urban Bobek (Cosylab)  
+**Status:** In Progress - PR #3716 opened  
+**Notes:** Started migrating the widget color service to `core/ui` and compiling a list of all places where colors are either hard-coded or implemented in a non-standard way. This project lays the groundwork for the possibility of having the option to theme Phoebus.
 
 ---
 
@@ -452,7 +459,9 @@ Standardize Spring Boot Actuator health endpoints across all Phoebus middle laye
 **Resources:**
 - Spring Boot Actuator Health: https://docs.spring.io/spring-boot/reference/actuator/endpoints.html#actuator.endpoints.health
 
-**Assigned To:** _Available_
+**Assigned To:** Kunal Shroff (BNL)  
+**Status:** Completed - PRs opened: Phoebus #3714, Olog #256  
+**Notes:** Implemented health check endpoints for Phoebus services to improve service observability and operational monitoring. These endpoints provide standardized health status reporting to support deployment environments, container orchestration systems, and automated monitoring tools. The work ensures services can expose readiness and liveness information, improving reliability and maintainability of the Phoebus ecosystem.
 
 ---
 
@@ -881,7 +890,8 @@ Create a training VM for Phoebus services and tools that complements the existin
 - Ansible roles from DEVOPS-ANSIBLE-001
 - Vagrant documentation: https://www.vagrantup.com/docs
 
-**Assigned To:** _Available_
+**Assigned To:** _Available_  
+**Related Work:** Ralph Lange (ITER) and Simon Rose (ESS) worked on splitting the CI setup for the existing training-vm, and Ralph Lange updated oac-tree in preparation for the April 2026 Saclay training.
 
 ---
 
