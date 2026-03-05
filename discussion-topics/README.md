@@ -179,7 +179,25 @@ This document outlines the technical discussion topics for the Phoebus Tools and
 
 ## Meeting Notes
 
-_To be filled during the session on Monday, February 23rd_
+Discussion on alarm services:
+
+- Current philosophy and work flow of adding/updated alarm configs is clunky and rigid.
+- Proposal for Phoebus: support batch operations (add PVs) in the alarm config UI.
+    - Selection of PVs in (for instance) channel finder UI, add to alarm config from context menu.
+    - Batch operation to add PVs in the alarm tree UI not a feature needed by everybody.
+- General concern: no user level access control to operations.
+- Feature request: context menu item to "disable until", easier than launching the config dialog.
+- Feature request: "disable until" to use a preference to avoid the need to specify end date/time.
+- Actions on alarm config: who did what and why... Integration with Olog?
+- Update UI to indicate that Kafka producer messages cannot be sent (read-only client). New preference?
+- Proposal: add REST API on top of alarm config logger, e.g. get alarm config at specific date.
+- Support an "offline mode" alarm tree where operations act on the configuration (e.g. in memory).
+  - Load alarm config file and render tree UI.
+  - Make changes in UI/memory
+  - Save changes from memory to config file.
+- Actions not allowed (e.g. no producer messages) must provide feedback or be disabled.
+- REST API for Kafka producer messages for ack, disable, config change?
+  - This would be a new service replacing (?) producer messages from alarm UIs.
 
 ---
 
